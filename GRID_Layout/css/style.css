@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(196, 68, 45);
+  grid-area: header;
+}
+aside {
+  background-color: chartreuse;
+  grid-area: aside;
+}
+
+section {
+  background-color: rgb(15, 123, 199);
+  grid-area: section;
+}
+
+main {
+  background-color: violet;
+  grid-area: main;
+}
+
+footer {
+  background-color: rgb(226, 207, 43);
+  grid-area: footer;
+}  
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  grid-template-rows: 150px 150px 150px 150px;
+  grid-template-areas: 
+  "header header header"
+  "aside section section"
+  "aside main main"
+  "footer footer footer";
+}
