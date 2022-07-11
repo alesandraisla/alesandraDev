@@ -9,7 +9,7 @@ HTML5 - CSS3
 
 ## Link vídeo para visualização
 
-[Grid Layout - youtube](https://alesandraisla.github.io/ping-pong-canvas/)
+[Grid Layout - youtube](https://youtu.be/49JiRlzBNQ4)
 
 ## Layout
 
