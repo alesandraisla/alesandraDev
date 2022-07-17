@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 15rem;
+}
+
+.container-box {
+  border: 2px solid navy;
+  padding: 10rem;
+}
+p {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  accent-color: green;
+}
+
+input[type="checkbox"] {
+  accent-color: purple;
+}
+
+.border-inline {
+  border-inline: 5px solid yellow;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.border-block{
+  border-block: 5px solid blue;
+}
+
+
+
