@@ -1,0 +1,44 @@
+/* ================== ID com várias classes e !important =================== */
+
+#primeiroId {
+  background-color: blue;
+}
+
+.primeira.segunda.terceira.quarta {
+  background-color: pink;
+}
+
+
+/* ================== O uso do :not =================== */
+
+div.estiloDiferente p {
+  background-color: green;
+}
+
+div:not(.estiloDiferente) p {
+  background-color: yellow;
+}
+
+
+/* ================== O uso do form-based =================== */
+
+#textoSimples {
+  color: blue;
+}
+
+p[id="textoSimples"]{
+  color: pink;
+  background-color: green;
+}
+
+/* ================== Comportamento em cascata =================== */
+
+h2 {
+  color: red;
+  background-color: black;
+}
+
+h2 {
+  color: white;
+  background-color: navy;
+}
