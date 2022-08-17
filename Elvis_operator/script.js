@@ -1,29 +1,29 @@
 let valor = null;
 
-let condicao = valor > 10 ? "Retorne a primeira expressão" : "Retorne a segunda"
+const ternario = valor > 10 ? "É verdade" : "É falso";
 
-console.log(condicao)
+console.log(ternario)
 
-/**================== */
+const nullish = valor ?? "Ele é nulo!"
 
+console.log(nullish)
 
-let segundaCondicao = valor ?? "Retorna aqui!!"
+let logica = true && true;
+console.log(logica)
 
-console.log(segundaCondicao)
+let logica2 = true && false;
+console.log(logica2)
 
-/**================== */
+let logica3 = true || true;
+console.log(logica3)
 
+let logica4 = false || false;
 
-let operadores = true || false;
-
-console.log(operadores)
-
-/**================== */
-
+console.log(logica4)
 
 let pessoa = {
   nome: 'Suzy',
-  idade: 28,
+  idade: 27,
 }
 
 console.log(pessoa.cidade?.toString())
