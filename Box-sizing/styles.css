@@ -1,0 +1,13 @@
+
+div {
+  width: 200px;
+  height: 200px;
+  border: 5px solid rgb(40, 137, 240) ;
+  padding: 10px;
+  background-image:linear-gradient(to bottom, 
+    rgb(4, 7, 32) 0%, rgb(4, 7, 32)   100%), 
+    linear-gradient(to bottom, 
+    rgb(154, 54, 184) 0%, rgb(154, 54, 184) 100%);
+  background-clip: content-box, padding-box;
+}
+
