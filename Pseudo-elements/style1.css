@@ -1,0 +1,39 @@
+input::placeholder {
+  color: darkcyan;
+}
+
+/* Presentational styles */
+
+input {
+  padding: 0.5em 1em;
+  border: 1px solid var(--color-stroke);
+}
+
+::marker {
+  color: hotpink;
+}
+
+ul ::marker {
+  font-size: 1.5em;
+}
+
+ol ::marker {
+  font-size: 1.1em;
+}
+
+summary::marker {
+  content: '\002B'' '; /* Plus symbol with space */
+}
+
+details[open] summary::marker {
+  content: '\2212'' '; /* Minus symbol with space */
+}
+
+/* Presentational styles */
+li + li {
+  margin-top: 0.25em;
+}
+
+ol {
+  padding: 0 0 0 1.1em;
+}

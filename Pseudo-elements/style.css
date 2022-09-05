@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+video::backdrop {
+  background-color: rgb(32, 106, 218);
+}
+
+video {
+  min-width: 5rem;
+  max-width: 80%;
+}
+
+
+
+
