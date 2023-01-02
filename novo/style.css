@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+button {
+  background-color: rgb(26, 74, 114);
+  color: rgb(223, 184, 232);
+  outline: none ;
+}
+
+button:focus {
+  border-color: rgb(223,184,232);
+}
+
