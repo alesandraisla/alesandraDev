@@ -1,0 +1,64 @@
+h1 {
+  font-size: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  height: 80px;
+  width: 70px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+}
+
+img {
+  width: 70px;
+  height: 40px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 5px;
+  text-align: center;
+}
+
+
+p {
+  font-size: 3px;
+  align-items: center;
+  text-align: justify;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+button {
+  background-color: #63adce;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d8b0bc;
+}
+
+a {
+  font-size: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.contentButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 5px;
+}
