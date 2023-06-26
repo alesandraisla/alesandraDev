@@ -1,8 +1,12 @@
 import React from 'react';
 import { createGlobalStyle, ThemeProvider} from 'styled-components'
 import { ButtonPrimary, ButtonSecondary, Content } from './ButtonStyles';
+import { Counter } from './counter/counter';
 
 const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0 auto;
+  }
   a {
     text-decoration: none;
   }
@@ -17,17 +21,7 @@ function App() {
   <>
   <ThemeProvider theme={theme}>
     <GlobalStyle />
-    <Content>
-      <ButtonPrimary primary onClick={() => alert('Clicado!')}>
-        Clique aqui!
-      </ButtonPrimary>
-      <ButtonPrimary  onClick={() => alert('Clicado!')}>
-        Clique aqui!
-      </ButtonPrimary>
-      <ButtonSecondary>
-        Segundo botão!
-      </ButtonSecondary>
-    </Content>
+    <Counter />
   </ThemeProvider>
   </>
   );
