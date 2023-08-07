@@ -1,0 +1,27 @@
+.accordion {
+  width: 44rem;
+  @media (max-width:768px){
+    width: 100%;
+  }
+}
+
+.acc-item {
+  border-left: 10px solid #a3598b;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  color: #442a48;
+}
+
+.acc-header {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f283c3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.acc-content {
+  padding: 10px;
+  background-color: #f6adec;
+}
