@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: #3116ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
+  color: white;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: rotate(45deg) scale(1.2);
+  background-color: #5d9ee3;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: black;
+}

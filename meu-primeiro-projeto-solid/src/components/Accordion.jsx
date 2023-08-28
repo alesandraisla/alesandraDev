@@ -30,7 +30,11 @@ export function Accordion({items}) {
   return(
     <div class="accordion">
       {items.map((item, index) => (
-        <AccordionItem key={index} title={item.title} content={item.content} />
+        <AccordionItem 
+          key={index} 
+          title={item.title} 
+          content={item.content} 
+        />
       ))}
     </div>
   )
