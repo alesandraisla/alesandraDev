@@ -12,6 +12,29 @@ const updateStudent = {
   course:	'Medicina'
 }
 
+axios.interceptors.response.use(
+  function(response) {
+    console.log(
+      'Sucesso', 
+      response);
+  },
+  function(error) {
+    if(error.response) {
+      console.error(
+        'Erro na resposta do servidor', 
+        error.response.status);
+      console.error(
+        'Detalhes do erro', 
+        error.response.data);
+    } 
+    return Promise.reject(error);
+  }
+)
+
+const myInterceptor = axios.interceptors.request.use(function () {/*...*/});
+axios.interceptors.request.eject(myInterceptor);
+
+
 async function getStudents() {
   try{
     const response = await axios.get(url);
@@ -54,7 +77,7 @@ async function deleteStudent() {
     console.log(error)
   }
 }
-deleteStudent()
+// deleteStudent()
 
 async function getOneStudent() {
   try{
@@ -66,4 +89,4 @@ async function getOneStudent() {
   }
 }
 
-getOneStudent()
+// getOneStudent()
