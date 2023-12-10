@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.box-one {
+  width: 50px;
+  height: 50px;
+  background-color: #0074d9;
+  animation: move 2s ease-in-out infinite;
+}
+.box-two {
+  width: 50px;
+  height: 50px;
+  background-color: #b100d9;
+  animation: move 2.5s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

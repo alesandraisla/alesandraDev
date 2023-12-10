@@ -1,14 +1,14 @@
 import React from 'react';
 import { createGlobalStyle, ThemeProvider} from 'styled-components'
-import { ButtonPrimary, ButtonSecondary, Content } from './ButtonStyles';
-import { Counter } from './counter/counter';
+import { MenuHamburguer } from './MenuHamburguer/MenuHamburguer';
 
 const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0 auto;
-  }
   a {
     text-decoration: none;
+  }
+
+  * {
+    margin: 0;
   }
 `
 export const theme = {
@@ -21,7 +21,7 @@ function App() {
   <>
   <ThemeProvider theme={theme}>
     <GlobalStyle />
-    <Counter />
+    <MenuHamburguer />
   </ThemeProvider>
   </>
   );
