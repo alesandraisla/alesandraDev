@@ -14,3 +14,4 @@ function createSnowflake(container) {
   snowflake.style.animationDelay = `${Math.random()}s`
   container.appendChild(snowflake);
 }
+
