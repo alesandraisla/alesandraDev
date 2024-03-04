@@ -1,6 +1,7 @@
 import React from 'react';
 import { createGlobalStyle, ThemeProvider} from 'styled-components'
-import { MenuHamburguer } from './MenuHamburguer/MenuHamburguer';
+import { Text } from './components/Text/Text';
+import { ButtonFontSize } from './components/ButtonFontSize/ButtonFontSize';
 
 const GlobalStyle = createGlobalStyle`
   a {
@@ -9,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
   * {
     margin: 0;
+    box-sizing: border-box;
   }
 `
 export const theme = {
@@ -20,8 +22,10 @@ function App() {
   return (
   <>
   <ThemeProvider theme={theme}>
+    <ButtonFontSize>
+      <Text />
+    </ButtonFontSize>
     <GlobalStyle />
-    <MenuHamburguer />
   </ThemeProvider>
   </>
   );
