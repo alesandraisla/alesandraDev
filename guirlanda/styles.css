@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #2688c5, #E4E5E6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.guirlanda {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  background: radial-gradient(circle, #2E8B57, #006400);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5), inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+.guirlanda::before {
+  content: '';
+  position: absolute;
+  width: 12.5rem;
+  height: 12.5rem;
+  background: linear-gradient(to bottom, #82b2d4, #bcd0df);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+.enfeiteCentral {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 90px;
+}
+
+.enfeiteCentral::before,
+.enfeiteCentral::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  background: radial-gradient(circle, #FF0000, #8B0000);
+  border-radius: 50% 50% 0 0;
+}
+
+.enfeiteCentral::before {
+  left: 0;
+  transform: rotate(-30deg);
+}
+
+.enfeiteCentral::after {
+  right: 0;
+  transform: rotate(30deg);
+}
+
+.tracoDireito {
+  position: absolute;
+  top: 7px;
+  left: 55%;
+  width: 10px;
+  height: 80px;
+  background: radial-gradient(circle, #FF0000, #8B0000);
+  transform: translateX(-40%) rotate(-25deg);
+}
+
+.tracoEsquerdo {
+  position: absolute;
+  top: 7px;
+  left: 42%;
+  width: 10px;
+  height: 80px;
+  background: radial-gradient(circle, #FF0000, #8B0000);
+  transform: translateX(40%) rotate(25deg);
+}
+
+.enfeite {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: radial-gradient(circle, #FFD700, #FF8C00);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+  right: 20rem;
+  top: 5rem;
+}
+
+.enfeite.red{
+  background: radial-gradient(circle, #FF0000, #8B0000);
+}
+
+.enfeite.blue {
+  background: radial-gradient(circle, #1E90FF, #00008B);
+}
+
+.enfeite.silver {
+  background: radial-gradient(circle, #d3dbe2, #89899a);
+}
